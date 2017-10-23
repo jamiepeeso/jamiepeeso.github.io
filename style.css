@@ -69,7 +69,7 @@
 	line-height: 1.5em;
 }
 
-.footer {
+footer {
 	grid-column: 2/3;
 	grid-row: 6;
 	background-color: black;
