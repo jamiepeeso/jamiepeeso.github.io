@@ -20,14 +20,13 @@ $(document).ready(function(){
           $('#repos').append(`
             <div class="well">
               <div class="row"> 
-                <div class="col-md-3">
+                <div class="col-md-7">
                   <img class="screenshot" src="${repo.html_url + '/blob/master/images/screenshot.PNG?raw=true' }" /></div>
                 </div>
-                <br><br>
-                <div class="col-md-8">
+                <div class="col-md-3">
                   <strong>${repo.name}</strong>: ${repo.description} <br><br>Last Updated: ${repo.updated_at}
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-2">
                   <a href="${repo.html_url}" target="_blank" class="btn btn-secondary btn-block">Repo Page</a>
                   <br><br>
                 </div>
@@ -46,7 +45,7 @@ $(document).ready(function(){
                 <br><br>
                 <a target="_blank" href="${user.html_url}" class="btn btn-secondary btn-block">View Profile</a>
               </div>
-              <div class="col-md-9">
+              <div class="col-md-8">
               <button type="button" class="btn btn-outline-secondary">Public Repos: ${user.public_repos}</button>   
               <br><br>
               <ul class="list-group">
