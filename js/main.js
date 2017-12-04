@@ -21,12 +21,13 @@ $(document).ready(function(){
             <div class="well">
               <div class="row"> 
                 <div class="col-md-3">
-                  <img src="${repo.html_url + 'somepathelements/images/screenshot.png?raw=true' }" /></div>
+                  <img class="screenshot" src="${repo.html_url + '/blob/master/images/screenshot.PNG?raw=true' }" /></div>
                 </div>
-                <div class="col-md-7">
-                  <strong>${repo.name}</strong>: ${repo.description} Last Updated: ${repo.updated_at}
+                <br><br>
+                <div class="col-md-8">
+                  <strong>${repo.name}</strong>: ${repo.description} <br><br>Last Updated: ${repo.updated_at}
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-9">
                   <a href="${repo.html_url}" target="_blank" class="btn btn-secondary btn-block">Repo Page</a>
                   <br><br>
                 </div>
@@ -56,6 +57,7 @@ $(document).ready(function(){
             </div>
           </div>
         </div>
+        <br><br>
         <h3 class="page-header">Latest Repos</h3>
         <div id="repos"></div>
       `);
